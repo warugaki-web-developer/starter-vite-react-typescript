@@ -4,6 +4,7 @@
     "dsznajder.es7-react-js-snippets",
     "timonvs.reactsnippetsstandard",
     "dbaeumer.vscode-eslint",
-    "esbenp.prettier-vscode"
+    "esbenp.prettier-vscode",
+    "styled-components.vscode-styled-components"
   ]
 }
