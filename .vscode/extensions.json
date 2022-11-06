@@ -1,5 +1,8 @@
 {
   "recommendations": [
-    "EditorConfig.EditorConfig"
+    "editorconfig.editorconfig",
+    "dsznajder.es7-react-js-snippets",
+    "timonvs.reactsnippetsstandard",
+    "dbaeumer.vscode-eslint"
   ]
 }
