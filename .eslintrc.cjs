@@ -5,12 +5,7 @@ module.exports = {
     es2021: true,
     node: true
   },
-  extends: [
-    'plugin:react/recommended',
-    'plugin:react-hooks/recommended',
-    'standard-with-typescript',
-    'prettier'
-  ],
+  extends: ['plugin:react/recommended', 'plugin:react-hooks/recommended', 'standard-with-typescript', 'prettier'],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaFeatures: {
@@ -20,11 +15,7 @@ module.exports = {
     sourceType: 'module',
     project: './tsconfig.json'
   },
-  plugins: [
-    'react',
-    'react-hooks',
-    '@typescript-eslint'
-  ],
+  plugins: ['react', 'react-hooks', '@typescript-eslint'],
   rules: {
     'react/react-in-jsx-scope': 'off',
     'react/function-component-definition': [
@@ -36,6 +27,7 @@ module.exports = {
     ],
     'import/no-extraneous-dependencies': 'off',
     'react-hooks/rules-of-hooks': 'error',
-    'react-hooks/exhaustive-deps': 'warn'
+    'react-hooks/exhaustive-deps': 'warn',
+    'react/no-unknown-property': ['error', { ignore: ['css'] }]
   }
 }
