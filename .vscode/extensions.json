@@ -5,6 +5,7 @@
     "timonvs.reactsnippetsstandard",
     "dbaeumer.vscode-eslint",
     "esbenp.prettier-vscode",
-    "styled-components.vscode-styled-components"
+    "styled-components.vscode-styled-components",
+    "stylelint.vscode-stylelint"
   ]
 }
