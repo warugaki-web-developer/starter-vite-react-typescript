@@ -29,5 +29,10 @@ module.exports = {
     'react-hooks/rules-of-hooks': 'error',
     'react-hooks/exhaustive-deps': 'warn',
     'react/no-unknown-property': ['error', { ignore: ['css'] }]
+  },
+  settings: {
+    react: {
+      version: 'detect'
+    }
   }
 }
