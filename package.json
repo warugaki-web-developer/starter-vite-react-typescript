@@ -16,7 +16,9 @@
     "lint:stylelint": "stylelint ./src/**/*.{css,jsx,tsx}",
     "lintfix:stylelint": "stylelint --fix ./src/**/*.{css,jsx,tsx}",
     "format:check": "prettier --check --ignore-path .gitignore './**/*.{js,jsx,ts,tsx,cjs,json,css}'",
-    "format:fix": "prettier --write --ignore-path .gitignore './**/*.{js,jsx,ts,tsx,cjs,json,css}'"
+    "format:fix": "prettier --write --ignore-path .gitignore './**/*.{js,jsx,ts,tsx,cjs,json,css}'",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "dependencies": {
     "@emotion/react": "^11.10.5",
@@ -24,6 +26,12 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@storybook/addon-essentials": "^7.0.0-alpha.50",
+    "@storybook/addon-interactions": "^7.0.0-alpha.50",
+    "@storybook/addon-links": "^7.0.0-alpha.50",
+    "@storybook/react": "^7.0.0-alpha.50",
+    "@storybook/react-vite": "^7.0.0-alpha.50",
+    "@storybook/testing-library": "^0.0.13",
     "@stylelint/postcss-css-in-js": "^0.38.0",
     "@types/react": "^18.0.22",
     "@types/react-dom": "^18.0.7",
@@ -39,8 +47,10 @@
     "eslint-plugin-promise": "^6.1.1",
     "eslint-plugin-react": "^7.31.10",
     "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-storybook": "^0.6.7",
     "postcss-syntax": "^0.36.2",
     "prettier": "^2.7.1",
+    "storybook": "^7.0.0-alpha.50",
     "stylelint": "^14.14.1",
     "stylelint-config-recess-order": "^3.0.0",
     "stylelint-config-standard": "^29.0.0",
