@@ -5,8 +5,8 @@ import { css } from '@emotion/react'
 const styleApp = css`
   & {
     max-width: 1280px;
-    margin: 0 auto;
     padding: 2rem;
+    margin: 0 auto;
     text-align: center;
   }
 
@@ -15,9 +15,11 @@ const styleApp = css`
     padding: 1.5em;
     will-change: filter;
   }
+
   .logo:hover {
     filter: drop-shadow(0 0 2em #646cffaa);
   }
+
   .logo.react:hover {
     filter: drop-shadow(0 0 2em #61dafbaa);
   }
@@ -26,6 +28,7 @@ const styleApp = css`
     from {
       transform: rotate(0deg);
     }
+
     to {
       transform: rotate(360deg);
     }
@@ -40,6 +43,7 @@ const styleApp = css`
   .card {
     padding: 2em;
   }
+
   .read-the-docs {
     color: #888;
   }
