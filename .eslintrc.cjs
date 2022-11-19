@@ -8,9 +8,9 @@ module.exports = {
   extends: [
     'plugin:react/recommended',
     'plugin:react-hooks/recommended',
+    'plugin:storybook/recommended',
     'standard-with-typescript',
-    'prettier',
-    'plugin:storybook/recommended'
+    'prettier'
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
