@@ -11,5 +11,8 @@
   "stylelint.validate": ["css", "javascriptreact", "typescriptreact"],
   "[markdown]": {
     "files.trimTrailingWhitespace": false
+  },
+  "path-intellisense.mappings": {
+    "@/": "${workspaceFolder}/src"
   }
 }
