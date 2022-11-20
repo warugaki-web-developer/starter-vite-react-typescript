@@ -21,7 +21,7 @@ module.exports = {
     sourceType: 'module',
     project: './tsconfig.json'
   },
-  plugins: ['react', 'react-hooks', '@typescript-eslint'],
+  plugins: ['react', 'react-hooks', '@typescript-eslint', 'testing-library', 'jest-dom'],
   rules: {
     'react/react-in-jsx-scope': 'off',
     'react/function-component-definition': [
@@ -43,6 +43,12 @@ module.exports = {
       }
     ]
   },
+  overrides: [
+    {
+      files: ['**/tests/**/*.[jt]s?(x)', '**/?(*.)+(spec|test).[jt]s?(x)'],
+      extends: ['plugin:jest-dom/recommended', 'plugin:testing-library/react']
+    }
+  ],
   settings: {
     react: {
       version: 'detect'
