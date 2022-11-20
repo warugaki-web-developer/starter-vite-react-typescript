@@ -6,6 +6,7 @@
     "dbaeumer.vscode-eslint",
     "esbenp.prettier-vscode",
     "styled-components.vscode-styled-components",
-    "stylelint.vscode-stylelint"
+    "stylelint.vscode-stylelint",
+    "zixuanchen.vitest-explorer"
   ]
 }
