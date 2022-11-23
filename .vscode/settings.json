@@ -12,7 +12,8 @@
   "[markdown]": {
     "files.trimTrailingWhitespace": false
   },
-  "path-intellisense.mappings": {
-    "@/": "${workspaceFolder}/src"
-  }
+  "path-autocomplete.pathMappings": {
+    "@": "${folder}/src"
+  },
+  "path-autocomplete.extensionOnImport": true
 }
