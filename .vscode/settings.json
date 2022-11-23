@@ -1,0 +1,19 @@
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": false,
+  "editor.formatOnType": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+    "source.fixAll.stylelint": true
+  },
+  "css.validate": false,
+  "stylelint.validate": ["css", "javascriptreact", "typescriptreact"],
+  "[markdown]": {
+    "files.trimTrailingWhitespace": false
+  },
+  "path-autocomplete.pathMappings": {
+    "@": "${folder}/src"
+  },
+  "path-autocomplete.extensionOnImport": true
+}

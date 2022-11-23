@@ -1,0 +1,13 @@
+{
+  "recommendations": [
+    "editorconfig.editorconfig",
+    "dsznajder.es7-react-js-snippets",
+    "timonvs.reactsnippetsstandard",
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "styled-components.vscode-styled-components",
+    "stylelint.vscode-stylelint",
+    "zixuanchen.vitest-explorer",
+    "ionutvmi.path-autocomplete"
+  ]
+}
