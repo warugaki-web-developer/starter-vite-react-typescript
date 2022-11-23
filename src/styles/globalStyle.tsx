@@ -1,6 +1,7 @@
 import { css } from '@emotion/react'
 
-const globalStyle = css`:root {
+const globalStyle = css`
+  :root {
     font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
     font-size: 16px;
     font-weight: 400;

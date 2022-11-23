@@ -7,6 +7,7 @@
     "esbenp.prettier-vscode",
     "styled-components.vscode-styled-components",
     "stylelint.vscode-stylelint",
-    "zixuanchen.vitest-explorer"
+    "zixuanchen.vitest-explorer",
+    "ionutvmi.path-autocomplete"
   ]
 }
