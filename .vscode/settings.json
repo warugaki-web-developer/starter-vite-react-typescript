@@ -12,8 +12,11 @@
   "[markdown]": {
     "files.trimTrailingWhitespace": false
   },
+  // ファイルpath入力補完
   "path-autocomplete.pathMappings": {
     "@": "${folder}/src"
   },
-  "path-autocomplete.extensionOnImport": true
+  "path-autocomplete.extensionOnImport": true,
+  // gitignore のディレクトリ・ファイル群は非表示にする
+  "explorer.excludeGitIgnore": true
 }
