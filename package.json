@@ -44,6 +44,7 @@
     "@typescript-eslint/eslint-plugin": "^5.46.1",
     "@typescript-eslint/parser": "^5.46.1",
     "@vitejs/plugin-react": "^3.0.0",
+    "@vitejs/plugin-react-swc": "^3.0.1",
     "@vitest/coverage-c8": "^0.25.8",
     "eslint": "^8.30.0",
     "eslint-config-prettier": "^8.5.0",
