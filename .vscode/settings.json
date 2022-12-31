@@ -18,5 +18,7 @@
   },
   "path-autocomplete.extensionOnImport": true,
   // gitignore のディレクトリ・ファイル群は非表示にする
-  "explorer.excludeGitIgnore": true
+  "explorer.excludeGitIgnore": true,
+  // typescriptのバージョン指定
+  "typescript.tsdk": "node_modules/typescript/lib"
 }
