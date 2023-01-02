@@ -34,6 +34,7 @@ module.exports = {
     ],
     '@typescript-eslint/consistent-type-imports': ['error', { prefer: 'type-imports' }],
     'import/no-extraneous-dependencies': 'off',
+    'react/require-default-props': 'off',
     'react-hooks/rules-of-hooks': 'error',
     'react-hooks/exhaustive-deps': 'warn',
     'react/no-unknown-property': [
