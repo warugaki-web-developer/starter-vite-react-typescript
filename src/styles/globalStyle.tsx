@@ -1,5 +1,9 @@
 import { css } from '@emotion/react'
 
+// reset css
+// https://elad2412.github.io/the-new-css-reset/
+import 'the-new-css-reset/css/reset.css'
+
 const globalStyle = css`
   :root {
     font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
