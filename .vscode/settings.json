@@ -19,6 +19,8 @@
   "path-autocomplete.extensionOnImport": true,
   // gitignore のディレクトリ・ファイル群は非表示にする
   "explorer.excludeGitIgnore": true,
+  // VSCodeで入力補完時も絶対パスインポートをしてくれるように
+  "typescript.preferences.importModuleSpecifier": "non-relative",
   // typescriptのバージョン指定
   "typescript.tsdk": "node_modules/typescript/lib"
 }
