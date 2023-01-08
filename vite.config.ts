@@ -10,13 +10,13 @@ import tsconfigPaths from 'vite-tsconfig-paths'
 export default defineConfig({
   plugins: [
     react({
-      jsxImportSource: '@emotion/react'
+      jsxImportSource: '@emotion/react',
     }),
-    tsconfigPaths()
+    tsconfigPaths(),
   ],
   test: {
     globals: true,
     environment: 'jsdom',
-    setupFiles: ['./src/setupTest.ts']
-  }
+    setupFiles: ['./src/setupTest.ts'],
+  },
 })
