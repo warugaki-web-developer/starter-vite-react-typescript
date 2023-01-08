@@ -8,7 +8,7 @@ export const decorators = [
       <Global styles={globalStyle} />
       <Story />
     </>
-  )
+  ),
 ]
 
 export const parameters = {
@@ -16,7 +16,7 @@ export const parameters = {
   controls: {
     matchers: {
       color: /(background|color)$/i,
-      date: /Date$/
-    }
-  }
+      date: /Date$/,
+    },
+  },
 }

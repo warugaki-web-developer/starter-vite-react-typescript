@@ -3,23 +3,23 @@ module.exports = {
   env: {
     browser: true,
     es2021: true,
-    node: true
+    node: true,
   },
   extends: [
     'plugin:react/recommended',
     'plugin:react-hooks/recommended',
     'plugin:storybook/recommended',
     'standard-with-typescript',
-    'prettier'
+    'prettier',
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaFeatures: {
-      jsx: true
+      jsx: true,
     },
     ecmaVersion: 'latest',
     sourceType: 'module',
-    project: './tsconfig.json'
+    project: './tsconfig.json',
   },
   plugins: ['react', 'react-hooks', '@typescript-eslint', 'testing-library', 'jest-dom'],
   rules: {
@@ -29,8 +29,8 @@ module.exports = {
       {
         namedComponents: 'arrow-function',
         // 'function-declaration' | 'function-expression' | 'arrow-function'
-        unnamedComponents: 'arrow-function' // 'function-declaration' | 'function-expression' | 'arrow-function'
-      }
+        unnamedComponents: 'arrow-function', // 'function-declaration' | 'function-expression' | 'arrow-function'
+      },
     ],
     '@typescript-eslint/consistent-type-imports': ['error', { prefer: 'type-imports' }],
     'import/no-extraneous-dependencies': 'off',
@@ -40,19 +40,19 @@ module.exports = {
     'react/no-unknown-property': [
       'error',
       {
-        ignore: ['css']
-      }
-    ]
+        ignore: ['css'],
+      },
+    ],
   },
   overrides: [
     {
       files: ['**/tests/**/*.[jt]s?(x)', '**/?(*.)+(spec|test).[jt]s?(x)'],
-      extends: ['plugin:jest-dom/recommended', 'plugin:testing-library/react']
-    }
+      extends: ['plugin:jest-dom/recommended', 'plugin:testing-library/react'],
+    },
   ],
   settings: {
     react: {
-      version: 'detect'
-    }
-  }
+      version: 'detect',
+    },
+  },
 }
