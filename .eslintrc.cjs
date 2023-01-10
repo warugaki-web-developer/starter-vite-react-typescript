@@ -7,6 +7,7 @@ module.exports = {
   },
   extends: [
     'plugin:react/recommended',
+    'plugin:jsx-a11y/strict',
     'plugin:react-hooks/recommended',
     'plugin:storybook/recommended',
     'standard-with-typescript',
@@ -21,7 +22,7 @@ module.exports = {
     sourceType: 'module',
     project: './tsconfig.json',
   },
-  plugins: ['react', 'react-hooks', '@typescript-eslint', 'testing-library', 'jest-dom'],
+  plugins: ['react', 'react-hooks', '@typescript-eslint', 'testing-library', 'jest-dom', 'import'],
   rules: {
     'react/react-in-jsx-scope': 'off',
     'react/function-component-definition': [
@@ -30,6 +31,30 @@ module.exports = {
         namedComponents: 'arrow-function',
         // 'function-declaration' | 'function-expression' | 'arrow-function'
         unnamedComponents: 'arrow-function', // 'function-declaration' | 'function-expression' | 'arrow-function'
+      },
+    ],
+    // importの自動整列
+    'import/order': [
+      'error',
+      {
+        groups: ['builtin', 'external', 'parent', 'sibling', 'index', 'object', 'type'],
+        pathGroups: [
+          {
+            pattern: '{react,react-dom/**,react-router-dom}',
+            group: 'builtin',
+            position: 'before',
+          },
+          {
+            pattern: '@src/**',
+            group: 'parent',
+            position: 'before',
+          },
+        ],
+        pathGroupsExcludedImportTypes: ['builtin'],
+        alphabetize: {
+          order: 'asc',
+        },
+        'newlines-between': 'always',
       },
     ],
     '@typescript-eslint/consistent-type-imports': ['error', { prefer: 'type-imports' }],
