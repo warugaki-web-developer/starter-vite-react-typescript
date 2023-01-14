@@ -24,6 +24,16 @@ module.exports = {
   },
   plugins: ['react', 'react-hooks', '@typescript-eslint', 'testing-library', 'jest-dom', 'import'],
   rules: {
+    '@typescript-eslint/consistent-type-imports': ['error', { prefer: 'type-imports' }],
+    'react/require-default-props': 'off',
+    'react-hooks/rules-of-hooks': 'error',
+    'react-hooks/exhaustive-deps': 'warn',
+    'react/no-unknown-property': [
+      'error',
+      {
+        ignore: ['css'],
+      },
+    ],
     'react/react-in-jsx-scope': 'off',
     'react/function-component-definition': [
       'error',
@@ -33,6 +43,7 @@ module.exports = {
         unnamedComponents: 'arrow-function', // 'function-declaration' | 'function-expression' | 'arrow-function'
       },
     ],
+    'import/no-extraneous-dependencies': 'off',
     // importの自動整列
     'import/order': [
       'error',
@@ -55,17 +66,6 @@ module.exports = {
           order: 'asc',
         },
         'newlines-between': 'always',
-      },
-    ],
-    '@typescript-eslint/consistent-type-imports': ['error', { prefer: 'type-imports' }],
-    'import/no-extraneous-dependencies': 'off',
-    'react/require-default-props': 'off',
-    'react-hooks/rules-of-hooks': 'error',
-    'react-hooks/exhaustive-deps': 'warn',
-    'react/no-unknown-property': [
-      'error',
-      {
-        ignore: ['css'],
       },
     ],
   },
